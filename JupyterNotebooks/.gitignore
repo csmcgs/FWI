@@ -1,0 +1,6 @@
+# Ignore the following files in this directory
+.DS_Store
+/__pycache__/
+/work/*
+/.ipynb_checkpoints/
+D_Specfem2D_kernel_PSV.ipynb

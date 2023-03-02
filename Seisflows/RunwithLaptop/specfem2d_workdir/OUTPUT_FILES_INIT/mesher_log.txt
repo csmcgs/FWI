@@ -1,0 +1,146 @@
+
+ **********************************************
+ *** Specfem 2-D Mesher - MPI version       ***
+ **********************************************
+
+ Running Git version of the code corresponding to commit 604f766101c9ece3d588d61e6275d81d50dd8e65
+ dating From Date:   Thu Sep 22 12:55:08 2022 +0200
+
+ Reading the parameter file...
+
+ Title of the simulation: Tape-Liu-Tromp (GJI 2007)
+
+
+ Receiver lines:
+   Nb of line sets =            1
+
+ Materials:
+   Nb of solid, fluid or porous materials =            1
+
+ --------
+ Material #           1  isotropic
+ rho,cp,cs   =    2600.0000000000000        5800.0000000000000        3500.0000000000000     
+ Qkappa, Qmu =    10.000000000000000        10.000000000000000     
+ Material is solid
+ --------
+
+
+ Mesh from internal meshing:
+
+ Reading interface data from file: ./DATA/interfaces_Tape2007.dat
+ Reading            2  points for interface            1
+ Reading            2  points for interface            2
+
+ Total number of layers in z direction =            1
+ There are           40  spectral elements along Z in layer            1
+
+ Total number of spectral elements along X =           40
+ Total number of spectral elements along Z =           40
+
+ Regions:
+   Nb of regions in the mesh =            1
+
+ ------
+ Region            1
+ IX from            1  to           40
+ IZ from            1  to           40
+ Material #            1  isotropic
+ Material is solid
+ vp     =    5800.00000    
+ vs     =    3500.00000    
+ rho    =    2600.00000    
+ Poisson's ratio =   0.213651240    
+ QKappa =    10.0000000    
+ Qmu    =    10.0000000    
+ ------
+
+ Parameter file successfully read 
+
+
+ Mesh from internal meshing:
+   Total number of spectral elements         =         1600
+
+ PML mesh elements:
+   Total number of PML elements =            0
+
+ The mesh contains         1600  elements
+
+ Control elements have            4  nodes
+
+ Reading in SOURCE file...
+
+ Source           1
+   Position xs, zs =    362079.06000000000        61219.230000000003     
+
+   Source type (1=force, 2=moment tensor):            1
+   Force source:
+   Angle of the source (deg) =    0.0000000000000000     
+
+   Time function type (1=Ricker, 2=First derivative, 3=Gaussian, 4=Dirac, 5=Heaviside, 6,7=ocean type, 8=Read from file, 9=burst, 10=Sinusoidal, 11=Ormsby):           2
+   Ricker wavelet (first-derivative):
+   Frequency, delay =    8.4000000000000005E-002   0.0000000000000000     
+   Multiplying factor  =    10000000000.000000     
+
+ all sources are okay
+
+ Normals to surface not needed
+
+ Node coordinates:
+
+ reading node coordinates from interfaces...
+
+ Mesh surfaces:
+   determining acoustic free surface...
+   number of acoustic elements with free surface =            0
+
+   determining absorbing boundary surfaces...
+   number of elements with absorbing boundaries =          160
+
+
+ Mesh dimensions: 
+   Min and max value of X in the grid =    0.0000000000000000        480000.00000000000     
+   Min and max value of Z in the grid =    0.0000000000000000        480000.00000000000     
+
+ Mesh partitioning:
+   decomposing mesh using NPROC =            1
+
+ Graph construction:
+   graph adjacency done
+
+ Coupled interfaces:
+ nedges_coupled (acoustic/elastic)     =            0
+ nedges_coupled (acoustic/poroelastic) =            0
+ nedges_coupled (poroelastic/elastic)  =            0
+
+ Local numbering:
+   NPROC:            1
+   number of elements:         1600
+
+ decompose mesh all done
+
+ Absorbing boundaries:
+   nedge_bound   :          160
+   nelemabs_merge:          160
+
+ Saving databases:
+   database file: ./OUTPUT_FILES/Database00000.bin
+   slice            0  has number of spectral elements =        1600
+
+   VTK mesh files:
+   written file: ./OUTPUT_FILES//mesh_materials.vtk
+   written file: ./OUTPUT_FILES//mesh_partition_number.vtk
+   done
+
+ creating STATIONS file...
+
+ writing the ./DATA/STATIONS file
+
+
+ There are            1  receivers
+
+ Target positions (x,z) of the            1  receivers
+
+ Receiver            1  =    180081.41000000000        388768.71000000002     
+
+ This will be a serial simulation
+
