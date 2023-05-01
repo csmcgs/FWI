@@ -1,0 +1,7 @@
+bin
+parameters.yaml
+scratch
+sflog.txt
+sfstate.txt
+logs
+output
